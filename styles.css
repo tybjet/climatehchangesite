@@ -1,0 +1,47 @@
+/* Define colors */
+:root {
+    --tulip-tree: #e3aa5f;
+    --munga: #487d74;
+}
+
+/* Apply color scheme */
+body {
+    background-color: var(--tulip-tree);
+    color: var(--munga);
+}
+
+/* Add IDs and classes */
+#main-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Font and text properties */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Box model */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--munga);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
