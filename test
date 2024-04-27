@@ -1,0 +1,30 @@
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/ContactFormServlet")
+public class ContactFormServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Retrieve form data
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String phone = request.getParameter("phone");
+        String feedback = request.getParameter("feedback");
+
+        // Process the data (e.g., save to database, send an email, etc.)
+        // For this example, we'll just print the data to the console
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+        System.out.println("Feedback: " + feedback);
+
+        // Redirect back to the contact form page
+        response.sendRedirect("websitecontact.html");
+    }
+}
