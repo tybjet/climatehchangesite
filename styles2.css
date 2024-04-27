@@ -1,13 +1,13 @@
 /* Define colors */
 :root {
-    --tulip-tree: #e3aa5f;
-    --munga: #487d74;
+    --baby-blue: #a2d8f9;
+    --white: #ffffff;
 }
 
 /* Apply color scheme */
 body {
-    background-color: var(--tulip-tree);
-    color: var(--munga);
+    background-color: var(--baby-blue);
+    color: var(--white);
 }
 
 /* Add IDs and classes */
@@ -15,10 +15,9 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-right: 10px solid var(--munga); /* Add border to the right */
 }
 
 .section-title {
@@ -37,8 +36,8 @@ p {
 .box {
     width: 100px;
     height: 100px;
-    background-color: var(--munga);
-    color: white;
+    background-color: var(--baby-blue);
+    color: var(--white);
     text-align: center;
     line-height: 100px;
     margin: 10px;
